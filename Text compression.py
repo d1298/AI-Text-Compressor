@@ -1,28 +1,21 @@
 from groq import Groq
 
-client = Groq(
-    api_key=("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"),
-)
 
-
-#amount (1/x) of the text to be removed
-# max 2
 
 def compress(file, remove):
     text = []
     length = len(file)
+    
     for i in range(length):
         text.append(file[i])
             
     shorterText = text
     shorterText = [char for i, char in enumerate(text) if i % remove != 0]
             
-    
     finalText = ""
-    
     for i in range(len(shorterText)):
         finalText += shorterText[i] 
-    
+        
     return finalText
         
         
@@ -49,6 +42,11 @@ def jaccard_similarity(str1, str2):
 
 filename = input("What is the name of the file you want to compress? ")
 remove = int(input("What amount of the file would you like to compress?"))
+API_KEY = input("What is your Grok API key?")
+
+client = Groq(
+    api_key=(API_KEY),
+)
 
 with open(filename, "r") as r:
     file = r.read()
