@@ -1,7 +1,5 @@
 from groq import Groq
 
-
-
 def compress(file, remove):
     text = []
     length = len(file)
