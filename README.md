@@ -4,7 +4,11 @@
 Prompt uses AI to create a description of an image and then to decompress it we use an iamge generator to generate an image based on that prompt. Slicing removes half the pixles of the image, and based on the surrounding images uses AI to guess what the pixel in between would be.
 
 ![image](https://github.com/user-attachments/assets/7844fd38-75a2-48c5-aa07-223bfb01c005)
+
 Goes to 
+Man holding a pencil up to his face
+
+Goes to
 ![image](https://github.com/user-attachments/assets/e09001d1-6d1a-4332-8890-7876b171b7fd)
 
 # Text compression
