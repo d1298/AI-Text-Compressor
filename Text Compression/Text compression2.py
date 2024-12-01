@@ -49,7 +49,7 @@ while True:
     else: 
         file = input("What is the string you want to compress? ")
         
-    API_KEY = "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"
+    API_KEY = ""
 
     client = Groq(
         api_key=(API_KEY),
